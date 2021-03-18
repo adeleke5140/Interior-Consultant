@@ -1,0 +1,200 @@
+body {
+    background: rgba(0,0,0,0.7);
+    /* overflow: hidden; */
+}
+
+header {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 9em;
+}
+
+header p {
+    float: left;
+    color: white;
+    padding: 10px;
+    border: solid 1px white;
+    border-radius: 5px;
+    margin-left: 2em;
+}
+
+header a {
+    text-decoration: none;
+    float: right;
+    padding: 10px 30px;
+    color: white;
+    margin: 15px 13px 15px 0;
+    transition: border-bottom 0.3s ease;
+}
+
+    /* clearfix...thanks @bradhussey ;) */
+    header::after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    header a:hover {
+        border-bottom: solid 3px white;
+    }
+
+body {
+    color: white;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+div.content {
+    width: 20%;
+    margin: 10em 0 0 3em;
+    z-index: 2;
+}
+
+div.content h1 {
+    margin-bottom: 1.5em;
+}
+
+div.content a {
+    text-decoration: none;
+    color: white;
+}
+
+div.image-container {
+    margin-left: 8em;
+}
+
+div.image-container img{
+    /* display: relative; */
+    width: 37em;
+    height: 28em;
+    margin: -20em 40em 0 30em;
+}
+
+.black-box {
+    position: absolute;
+    display: block;
+    background: rgba(29, 28, 28, 1);
+    box-shadow: 0 5px 3px rgba(0,0,0,0.5);
+    padding: 80px 150px;
+    margin: -7.2em 1em 0 48em;
+}
+
+.black-box #profile_image {
+    display: block;
+    float: left;
+    position: sticky;
+    -webkit-clip-path: circle(10% at 10% 20%);
+            clip-path: circle(10% at 10% 20%);
+    z-index: 4;
+}
+
+.black-box p {
+    position: absolute;
+    display: inline-block;
+    width: 60%;
+    /* box-sizing: border-box; */
+    margin: 0.9em 1.4em 0 -7em;
+    line-height: 25px;
+}
+
+.black-box p:first-child {
+    margin: -3em 1em 0 -3em;
+}
+
+.black-box p:nth-child(2) {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    color: rgba(101, 197, 197, 1);
+    margin: -1.6em 1em 0 -3.8em;
+}
+
+@media (max-width: 1023px) {
+    body {
+        overflow: hidden;
+    }
+
+    header {
+        display: block;
+        font-size: 0.3em;
+        margin: -2em 1em 0 -1.3em;
+    }
+    header p {
+        float: left;
+        color: white;
+        padding: 11px 25px;
+        border: solid 2px white;
+        font-size: 3em;
+        border-radius: 5px;
+        margin-left: 0.7em;
+        text-transform: uppercase;
+    }
+    header a {
+        text-decoration: none;
+        float: right;
+        padding: 3px 5px;
+        color: white;
+        transition: border-bottom 0.5s ease;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    main div.content {
+        width: 90%;
+        margin: 1em 0 0 0.5em;
+        z-index: 2;
+        color: white;
+    }
+    
+    main div.content a{
+        text-decoration: none;
+        color: white;
+    }
+
+    main div.content h1 {
+        font-size: 1.8em;
+    }
+
+    div.content h1 {
+        margin-bottom: 1em;
+    }
+
+    main div.image-container img{
+        width: 18em;
+        height: 16em;
+        margin: 0 0.3em 1em -7.6em;
+    }
+    .black-box {
+        position: absolute;
+        display: block;
+        background: rgba(29, 28, 28, 1);
+        box-shadow: 0 5px 3px rgba(0,0,0,0.5);
+        padding: 50px 150px;
+        margin: -3.5em 0.3em 0 -7em;
+    }
+    .black-box p {
+        position: absolute;
+        display: inline-block;
+        width: 60%;
+        margin: 0.1em 1.4em 0 -7em;
+        line-height: 20px;
+    }
+    
+    .black-box p:first-child {
+        margin: -2.7em 1em 0 -3em;
+    }
+    
+    .black-box p:nth-child(2) {
+        font-family: sans-serif;
+        font-size: 0.75em;
+        color: rgba(101, 197, 197, 1);
+        margin: -1.9em 1em 0 -3em;
+    }
+    .black-box p:last-child {
+        font-size: 0.9em;
+        margin: 0 0 2em -8em;
+    }
+}
