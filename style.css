@@ -1,90 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat&display=swap');
+
 body {
     background: rgba(0,0,0,0.7);
-    /* overflow: hidden; */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    display: block;
-    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
     margin-bottom: 9em;
 }
 
 header p {
-    float: left;
     color: white;
-    padding: 10px;
+    padding: 0.7rem;
     border: solid 1px white;
     border-radius: 5px;
-    margin-left: 2em;
+    margin-left: 1rem;
+    font-family: 'Crimson Pro', serif;
 }
 
-header a {
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul a {
     text-decoration: none;
-    float: right;
-    padding: 10px 30px;
+    padding: 1rem 2rem;
     color: white;
-    margin: 15px 13px 15px 0;
     transition: border-bottom 0.3s ease;
 }
 
-    /* clearfix...thanks @bradhussey ;) */
-    header::after {
-        display: table;
-        content: "";
-        clear: both;
-    }
-
-    header a:hover {
-        border-bottom: solid 3px white;
-    }
-
-body {
-    color: white;
-    margin: 0;
-    font-size: 1.1em;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-div.content {
+.content {
     width: 20%;
-    margin: 10em 0 0 3em;
+    margin: 0 1rem;
     z-index: 2;
 }
 
-div.content h1 {
+.content h1 {
+    font-family: 'Lora', serif;
     margin-bottom: 1.5em;
 }
 
-div.content a {
+.content a {
     text-decoration: none;
     color: white;
 }
 
-div.image-container {
-    margin-left: 8em;
-}
-
-div.image-container img{
-    /* display: relative; */
+.image-container img{
+    display: relative;
     width: 37em;
     height: 28em;
-    margin: -20em 40em 0 30em;
+    margin: -20em 0 0 40em;
 }
 
 .black-box {
     position: absolute;
-    display: block;
     background: rgba(29, 28, 28, 1);
     box-shadow: 0 5px 3px rgba(0,0,0,0.5);
-    padding: 80px 150px;
-    margin: -7.2em 1em 0 48em;
+    width: 30em;
+    height: 10em;
+    bottom: 1rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: row;
 }
 
-.black-box #profile_image {
-    display: block;
-    float: left;
-    position: sticky;
-    -webkit-clip-path: circle(10% at 10% 20%);
-            clip-path: circle(10% at 10% 20%);
+.black-box div {
+    position: relative;
+}
+
+.black-box div img{
+    position: absolute;
+    bottom: 7rem;
+    right: 90%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     z-index: 4;
 }
 
