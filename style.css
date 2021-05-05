@@ -111,10 +111,6 @@ main {
     display: inline-block;
 }
 
-/* 
-.black-box div p:first-child {
-} */
-
 #role p:nth-child(2) {
     font-family: sans-serif;
     font-size: 0.8em;
@@ -143,30 +139,24 @@ main {
 
 @media (max-width: 1023px) {
     body {
-        overflow: hidden;
+        margin: 0 5rem;
     }
 
     header {
         display: block;
-        font-size: 0.3em;
-        margin: -2em 1em 0 -1.3em;
+        margin-bottom: 0;
     }
+
     header p {
-        float: left;
-        color: white;
-        padding: 11px 25px;
+        display: inline-block;
+        padding: 1rem 1rem;
         border: solid 2px white;
-        font-size: 3em;
-        border-radius: 5px;
-        margin-left: 0.7em;
-        text-transform: uppercase;
+        font-size: 2.5rem;
+        text-align: center;
     }
-    header a {
-        text-decoration: none;
-        float: right;
-        padding: 3px 5px;
-        color: white;
-        transition: border-bottom 0.5s ease;
+
+    header ul a {
+        display: none;
     }
 
     main {
@@ -175,59 +165,54 @@ main {
         justify-content: space-between;
     }
 
-    main div.content {
-        width: 90%;
-        margin: 1em 0 0 0.5em;
-        z-index: 2;
-        color: white;
-    }
-    
-    main div.content a{
-        text-decoration: none;
-        color: white;
+    .content {
+        width: 100%;
     }
 
-    main div.content h1 {
+    .content h1 {
+        font-size: 4em;
+        margin: 0;
+    }
+
+    .content p {
         font-size: 1.8em;
     }
 
-    div.content h1 {
-        margin-bottom: 1em;
+    .image-container {
+        margin-top: 1rem;
     }
 
-    main div.image-container img{
-        width: 18em;
-        height: 16em;
-        margin: 0 0.3em 1em -7.6em;
+    .image-container img{
+        width: 85vw;
+        height: 50vh;
     }
+
     .black-box {
-        position: absolute;
-        display: block;
-        background: rgba(29, 28, 28, 1);
-        box-shadow: 0 5px 3px rgba(0,0,0,0.5);
-        padding: 50px 150px;
-        margin: -3.5em 0.3em 0 -7em;
+        bottom: -3rem;
+        right: 2rem;
+        width: 90%;
+        height: 35%;
     }
-    .black-box p {
-        position: absolute;
+
+    .black-box div img{
+        width: 8em;
+        height: 7em;
+        margin: 0.8em;
+    }
+    
+    .black-box div p {
         display: inline-block;
-        width: 60%;
-        margin: 0.1em 1.4em 0 -7em;
-        line-height: 20px;
+    }
+
+    #role p {
+        font-size: 2em;
     }
     
-    .black-box p:first-child {
-        margin: -2.7em 1em 0 -3em;
+    #role p:nth-child(2) {
+        font-size: 2.5em;
     }
     
-    .black-box p:nth-child(2) {
-        font-family: sans-serif;
-        font-size: 0.75em;
-        color: rgba(101, 197, 197, 1);
-        margin: -1.9em 1em 0 -3em;
+    #last-p {
+        width: 70%;
+        font-size: 2em;
     }
-    .black-box p:last-child {
-        font-size: 0.9em;
-        margin: 0 0 2em -8em;
-    }
-}
