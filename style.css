@@ -33,7 +33,7 @@ header ul {
 
 header ul a {
     text-decoration: none;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     color: white;
     transition: border-bottom 0.3s ease;
 }
