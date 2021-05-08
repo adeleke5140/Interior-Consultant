@@ -46,6 +46,10 @@ header ul a:hover {
     border-bottom: 3px solid white;
 }
 
+.hamburger {
+    display: none;
+}
+
 main {
     margin: 0;
     display: flex;
@@ -143,7 +147,6 @@ main {
     }
 
     header {
-        display: block;
         margin-bottom: 0;
     }
 
@@ -157,6 +160,36 @@ main {
 
     header ul a {
         display: none;
+    }
+
+    .hamburger, .hamburger::before, .hamburger::after {
+        position: relative;
+    }
+
+    .hamburger {
+        display: inline-block;
+        width: 7%;
+        height: 1vw;
+        background-color: white;
+        top: 70px;
+        right: 5rem;
+        position: absolute;
+    }
+
+    .hamburger::before {
+        content: "";
+        width: 7%;
+        height: 1vw;
+        background-color: white;
+        margin: 5px auto;
+    }
+
+    .hamburger::after {
+        content: "";
+        width: 7%;
+        height: 1vw;
+        background-color: white;
+        margin: 5px auto;
     }
 
     main {
@@ -175,7 +208,7 @@ main {
     }
 
     .content p {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .image-container {
