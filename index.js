@@ -1,3 +1,5 @@
-document.querySelector(".hamburger").addEventListener("click", function () {
-    document.querySelector().classList.toggle(".hamburger"); 
+let ham = document.querySelector(".hamburger");
+
+ham.addEventListener("click", function () {
+    ham.classList.toggle("open"); 
 });
